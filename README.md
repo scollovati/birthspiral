@@ -25,4 +25,4 @@ Find the spiral of your Birthday!
   distanceTo(x, y) -- how far is it to location x, y?
 
 ## Aknowledgments
-Thanks to Professor Roger B. Dannenberg for the [Turtle object](https: courses.ideate.cmu.edu/15-104/f2016/turtle-graphics/) created in p5.js.
+Thanks to Professor Roger B. Dannenberg for the [Turtle object](https://courses.ideate.cmu.edu/15-104/f2016/turtle-graphics/) created in p5.js.
