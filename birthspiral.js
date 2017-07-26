@@ -17,7 +17,7 @@ function drawTurtle() {
   background(0);
       var turtle = makeTurtle(130, 80);
       turtle.penDown();
-      turtle.setColor(255);
+      turtle.setColor(255, 0, 0);
       for (var i = 0; i < 1000; i++) {
           turtle.forward(150);
           turtle.right(141.5);
