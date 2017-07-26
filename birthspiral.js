@@ -1,7 +1,7 @@
 function setup() {
-  var widthdiv = document.getElementById('p5Canvas').offsetWidth;
+  var widthdiv = document.getElementById("p5Canvas").offsetWidth;
   var myCanvas = createCanvas(widthdiv, 25);
-  myCanvas.parent('p5Canvas');
+  myCanvas.parent("p5Canvas");
 }
 
 function draw() {
