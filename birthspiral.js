@@ -1,12 +1,31 @@
+var input, button, greeting;
+
 function setup() {
-  var widthdiv = document.getElementById("p5Canvas").offsetWidth;
-  var myCanvas = createCanvas(widthdiv, 25);
+  var myCanvas = createCanvas(400,400);
   myCanvas.parent("p5Canvas");
+  greeting = createElement('h2', 'What is your birthday?');
+  //greeting.position(input.x, input.y);
+  input = createInput("format DD-MM-YY");
+  button = createButton('Generate!');
+  button.position(input.x + input.width, input.y);
+  button.mousePressed(drawTurtle);
+
+
 }
 
-function draw() {
-  background(123);
-  ellipse(50, 50, 80, 80);
+function drawTurtle() {
+  background(0);
+      var turtle = makeTurtle(130, 80);
+      turtle.penDown();
+      turtle.setColor(255);
+      for (var i = 0; i < 1000; i++) {
+          turtle.forward(150);
+          turtle.right(141.5);
+          turtle.forward(60);
+          if (i % 20 === 0) {
+              turtle.forward(70);
+          }
+      }
 }
 
 //=======================================================
