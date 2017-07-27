@@ -3,18 +3,14 @@ var input, button, greeting;
 function setup() {
   var myCanvas = createCanvas(400,400);
   myCanvas.parent("p5Canvas");
-  greeting = createElement('h2', 'What is your birthday?');
-  //greeting.position(input.x, input.y);
-  input = createInput("", "Number");
-  button = createButton('Generate!');
-  button.position(input.x + input.width, input.y);
-  button.mousePressed(drawTurtle);
-
-
+  background(0);
 }
 
 function drawTurtle() {
-  background(0);
+      var userInput = document.getElementById("userInput").value;
+
+      background(0);
+
       var turtle = makeTurtle(130, 80);
       turtle.penDown();
       turtle.setColor(255, 0, 0);
