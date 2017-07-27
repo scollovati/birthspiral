@@ -1,3 +1,6 @@
-body { padding: 20px; }
 h1 { font-size: 50px; }
-body { font: 20px Helvetica, sans-serif; color: #333; }
+body {
+      font: 20px Helvetica, sans-serif;
+      color: #333;
+      padding: 20px;
+      }

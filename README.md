@@ -1,11 +1,12 @@
 # Birth Spiral
 Find the spiral of your Birthday!
+
 *Made with p5.js &amp; Turtle object*
 
 ## To Do's
 - find appropriate LICENSE
 - create a fun homepage
-- add a form for entering the Birthday
+- add responsivity to the homepage
 
 
 ## Reference Manual
@@ -34,7 +35,7 @@ Find the spiral of your Birthday!
 > angleTo(x, y) -- what is the angle from my heading to location x, y?
 >
 > turnToward(x, y, d) -- turn by d degrees toward location x, y
-> 
+>
 > distanceTo(x, y) -- how far is it to location x, y?
 
 ## Acknowledgments

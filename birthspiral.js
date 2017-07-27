@@ -5,7 +5,7 @@ function setup() {
   myCanvas.parent("p5Canvas");
   greeting = createElement('h2', 'What is your birthday?');
   //greeting.position(input.x, input.y);
-  input = createInput("format DD-MM-YY");
+  input = createInput("", "Number");
   button = createButton('Generate!');
   button.position(input.x + input.width, input.y);
   button.mousePressed(drawTurtle);
