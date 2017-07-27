@@ -8,14 +8,10 @@ function setup() {
   myCanvas.parent("p5Canvas");
   background(0);
 
-
-
   myTurtle = new makeTurtle(width/2, height/2);
   myTurtle.setColor(color(255,200,200));
   myTurtle.setWeight(2);
   myTurtle.penDown();
-  resetCanvas();
-  //noLoop();
 }
 
 function draw() {
@@ -31,7 +27,8 @@ function draw() {
 
 function start() {
    started = true;
-   loop();
+   resetCanvas();
+   // loop();
 }
 
 function resetCanvas() {
