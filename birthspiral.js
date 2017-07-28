@@ -1,42 +1,42 @@
-var myTurtle;
-var startFrame;
+var myTurtle, step;
 var started = false;
 
-
 function setup() {
-  var myCanvas = createCanvas(400,400);
+  var myCanvas = createCanvas(800,400);
   myCanvas.parent("p5Canvas");
   background(0);
+  
+  frameRate(60);
 
   myTurtle = new makeTurtle(width/2, height/2);
-  myTurtle.setColor(color(255,200,200));
-  myTurtle.setWeight(2);
-  myTurtle.penDown();
 }
 
 function draw() {
   //userInput can be used for varying Turtle's parameters
   var userInput = document.getElementById("userInput").value;
+
   if(started){
-    var step = (frameCount - startFrame)/30.0;
     myTurtle.forward(step);
     myTurtle.left(userInput);
-    if (myTurtle.y > height) resetCanvas();
+    step = step + 5;
+    myTurtle.setColor(color(Math.floor((Math.random() * 255) + 1),Math.floor((Math.random() * 255) + 1),Math.floor((Math.random() * 255) + 1)));
+    //if (myTurtle.y > height || myTurtle.x > width) resetCanvas();
   }
 }
 
 function start() {
    started = true;
    resetCanvas();
-   // loop();
 }
 
 function resetCanvas() {
     background(0);
-    startFrame = frameCount;
+    myTurtle.setColor(color(255,200,200));
+    myTurtle.setWeight(5);
     myTurtle.penUp();
     myTurtle.goto(width/2, height/2);
     myTurtle.penDown();
+    step = 10;
 }
 
 //=======================================================

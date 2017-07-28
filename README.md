@@ -6,7 +6,9 @@ Find the spiral of your Birthday!
 ## To Do's
 - find appropriate LICENSE
 - create a fun homepage
-- add responsivity to the homepage
+- require 6 digit input number
+- possibility to save the canvas as an image or pdf
+- make the homepage responsive
 
 
 ## Reference Manual
