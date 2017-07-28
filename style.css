@@ -17,6 +17,6 @@ body {
       text-align: center;
       }
 h1 { font-size: 40px; }
-h2 { color: #808080; }
+h2 { color: #333; }
 a { color: #dc8100; text-decoration: none; }
 a:hover { color: #333; text-decoration: none; }
