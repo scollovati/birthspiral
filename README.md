@@ -1,7 +1,7 @@
 # [Birth Spiral](https://kanoding.github.io/birthspiral/)
 Find the spiral of your Birthday!
 
-*Made with p5.js &amp; Turtle object*
+*Made with p5.js &amp; TurtleGraphics*
 
 ## To Do's
 - find appropriate LICENSE
