@@ -18,3 +18,5 @@ body {
       }
 h1 { font-size: 40px; }
 h2 { color: #808080; }
+a { color: #dc8100; text-decoration: none; }
+a:hover { color: #333; text-decoration: none; }
