@@ -9,7 +9,8 @@ Find the spiral of your Birthday!
 - require 6 digit input number
 - add the possibility to press enter for starting a new spiral
 - remove the real time update of the angle variable (?)
-- possibility to save the canvas as an image or pdf
+- possibility to save the canvas as an image, pdf or GIF
+- possibility to send the image via email
 - make the homepage responsive
 
 
