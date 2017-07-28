@@ -1,13 +1,14 @@
 html, body {
   height: 100%;
+  padding: 0px;
+  border: 0px;
 }
 
 body {
       font: 20px Helvetica, sans-serif;
       color: #333;
-      padding: 15px;
       margin: 0;
-      display: flex;
+      /*display: flex;*/
       /* This centers our sketch horizontally. */
       justify-content: center;
       /* This centers our sketch vertically. */

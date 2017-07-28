@@ -1,8 +1,10 @@
 <!doctype html>
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
+    <meta name="description" content="Find the spiral of your Birthday! Made with p5.js &amp; Turtle object"/>
+    <meta name="keywords" content="spiral, p5.js, turtle, processing, graphics"/>
+
+    <title>Birth Spiral!</title>
 
     <link href="style.css" rel="stylesheet" type="text/css">
 
@@ -13,11 +15,12 @@
 
 <body>
 <article>
-      <h1> Birth Spiral! </h1>
-      <h2>What is your birthday?</h2>
-      <input type="number" min="0" step="any" value="6.0" id="userInput"></input>
-      <button id="submitter" onclick="start()">Generate spiral!</button>
-      <p id="empty"></p>
+    <h1> Birth Spiral! </h1>
+    <h2>What is your birthday?</h2>
+    <p>Write it as DDMMYY</p>
+    <input  id="userInput" type="number" value="654321" required pattern="[0-9]{6}"></input>
+    <button id="submitter" onclick="start()">Generate spiral!</button>
+    <p id="empty"></p>
     <div id="p5Canvas"></div>
 </article>
 </body>
