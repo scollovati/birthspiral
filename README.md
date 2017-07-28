@@ -7,6 +7,8 @@ Find the spiral of your Birthday!
 - find appropriate LICENSE
 - create a fun homepage
 - require 6 digit input number
+- add the possibility to press enter for starting a new spiral
+- remove the real time update of the angle variable (?)
 - possibility to save the canvas as an image or pdf
 - make the homepage responsive
 
