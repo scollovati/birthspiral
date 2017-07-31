@@ -1,10 +1,11 @@
 var myTurtle, step;
 var started = false;
-var colorScalePhase = 'g_up'
-var r = 255
-var g = 0
-var b = 0
-var actualRGB = [255, 0, 0]
+var colorScalePhase = 'g_up';
+var r = 255;
+var g = 0;
+var b = 0;
+var actualRGB = [255, 0, 0];
+var birthColorInterval = 1;
 
 function setup() {
   var myCanvas = createCanvas(800,400);
@@ -24,8 +25,9 @@ function draw() {
     myTurtle.forward(step);
     myTurtle.left(userInput);
     step = step + 5;
-    actualRGB = colorScale(1)
-    myTurtle.setColor(color(actualRGB[0], actualRGB[1], actualRGB[2]))
+    birthColorInterval = Math.round(userInput / 100000)
+    actualRGB = colorScale(birthColorInterval);
+    myTurtle.setColor(color(actualRGB[0], actualRGB[1], actualRGB[2]));
     //myTurtle.setColor(color(Math.floor((Math.random() * 255) + 1),Math.floor((Math.random() * 255) + 1),Math.floor((Math.random() * 255) + 1)));
     //if (myTurtle.y > height || myTurtle.x > width) resetCanvas();
   }
@@ -44,6 +46,10 @@ function resetCanvas() {
     myTurtle.goto(width/2, height/2);
     myTurtle.penDown();
     step = 10;
+    var colorScalePhase = 'g_up';
+    var r = 255;
+    var g = 0;
+    var b = 0;
 }
 
 //=======================================================
@@ -167,35 +173,69 @@ function makeTurtle(tx, ty) {
 
 function colorScale(interval)
 {
-    if colorScalePhase == 'g_up':
-        if g + interval <= 255:
-            g += interval
-        else:
-            colorScalePhase = 'r_down'
-    elif colorScalePhase == 'r_down':
-        if r - interval >= 0:
-            r -= interval
-        else:
-            colorScalePhase = 'b_up'
-    elif colorScalePhase == 'b_up':
-        if b + interval <= 255:
-            b += interval
-        else:
-            colorScalePhase = 'g_down'
-    elif colorScalePhase == 'g_down':
-        if g - interval >= 0:
-            g -= interval
-        else:
-            colorScalePhase = 'r_up'
-    elif colorScalePhase == 'r_up':
-        if r + interval <= 255:
-            r += interval
-        else:
-            colorScalePhase = 'b_down'
-    elif colorScalePhase == 'b_down':
-        if b - interval >= 0:
-            b -= interval
-        else:
-            colorScalePhase = 'g_up'
+    if (colorScalePhase == 'g_up')
+    {
+        if (g + interval <= 255)
+        {
+            g += interval;
+        }
+        else
+        {
+            colorScalePhase = 'r_down';
+        }
+    }
+    else if (colorScalePhase == 'r_down')
+    {
+        if (r - interval >= 0)
+        {
+            r -= interval;
+        }
+        else
+        {
+            colorScalePhase = 'b_up';
+        }
+    }
+    else if (colorScalePhase == 'b_up')
+    {
+        if (b + interval <= 255)
+        {
+            b += interval;
+        }
+        else
+        {
+            colorScalePhase = 'g_down';
+        }
+    }
+    else if (colorScalePhase == 'g_down')
+    {
+        if (g - interval >= 0)
+        {
+            g -= interval;
+        }
+        else
+        {
+            colorScalePhase = 'r_up';
+        }
+    }
+    else if (colorScalePhase == 'r_up')
+        if (r + interval <= 255)
+        {
+            r += interval;
+        }
+        else
+        {
+            colorScalePhase = 'b_down';
+        }
+    else if (colorScalePhase == 'b_down')
+    {
+        if (b - interval >= 0)
+        {
+            b -= interval;
+        }
+        else
+        {
+            colorScalePhase = 'g_up';
+        }
+    }
     return [r, g, b]
 }
