@@ -1,5 +1,10 @@
 var myTurtle, step;
 var started = false;
+var colorScalePhase = 'g_up'
+var r = 255
+var g = 0
+var b = 0
+var actualRGB = [255, 0, 0]
 
 function setup() {
   var myCanvas = createCanvas(800,400);
@@ -19,7 +24,9 @@ function draw() {
     myTurtle.forward(step);
     myTurtle.left(userInput);
     step = step + 5;
-    myTurtle.setColor(color(Math.floor((Math.random() * 255) + 1),Math.floor((Math.random() * 255) + 1),Math.floor((Math.random() * 255) + 1)));
+    actualRGB = colorScale(1)
+    myTurtle.setColor(color(actualRGB[0], actualRGB[1], actualRGB[2]))
+    //myTurtle.setColor(color(Math.floor((Math.random() * 255) + 1),Math.floor((Math.random() * 255) + 1),Math.floor((Math.random() * 255) + 1)));
     //if (myTurtle.y > height || myTurtle.x > width) resetCanvas();
   }
 }
@@ -154,4 +161,41 @@ function makeTurtle(tx, ty) {
                   setColor: turtleSetColor, setWeight: turtleSetWeight,
                   face: turtleFace};
     return turtle;
+}
+
+
+
+function colorScale(interval)
+{
+    if colorScalePhase == 'g_up':
+        if g + interval <= 255:
+            g += interval
+        else:
+            colorScalePhase = 'r_down'
+    elif colorScalePhase == 'r_down':
+        if r - interval >= 0:
+            r -= interval
+        else:
+            colorScalePhase = 'b_up'
+    elif colorScalePhase == 'b_up':
+        if b + interval <= 255:
+            b += interval
+        else:
+            colorScalePhase = 'g_down'
+    elif colorScalePhase == 'g_down':
+        if g - interval >= 0:
+            g -= interval
+        else:
+            colorScalePhase = 'r_up'
+    elif colorScalePhase == 'r_up':
+        if r + interval <= 255:
+            r += interval
+        else:
+            colorScalePhase = 'b_down'
+    elif colorScalePhase == 'b_down':
+        if b - interval >= 0:
+            b -= interval
+        else:
+            colorScalePhase = 'g_up'
+    return [r, g, b]
 }
