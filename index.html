@@ -16,14 +16,13 @@
 
 <body>
 <article>
-    <h1> Birth Spiral! </h1>
-    <h2>What is your birthday?</h2>
-    <p>Write it as DDMMYY</p>
+    <h1>Birth Spiral <i class="fa fa-spinner" aria-hidden="true"></i></h1>
+    <h2>What will be your own spiral?</h2>
+    <p>Write your birthdate in the form below to find it!</p>
     <form>
-      <input  id="userInput" type="number" value="654321" required pattern="[0-9]{6}"></input>
+      <input id="userInput" type="number" pattern="[0-9]{6}" min="0" placeholder="write it as DDMMYY">
+      <input id="submitter" type="button" value="Generate Spiral" onclick="start()">
     </form>
-    <button id="submitter" onclick="start()">Generate spiral!</button>
-
     <p id="empty"></p>
     <div id="p5Canvas"></div>
     <div>

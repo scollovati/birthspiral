@@ -8,7 +8,7 @@ Find the spiral of your Birthday!
 - create a fun homepage
 - require 6 digit input number
 - parse the numerical input and use it as a variable for the spiral color, length, ... (angle should be at least 35)
-- create a "best of" of the parameters: angle 225 is really cool! With angles after 90° the spiral twists!
+- create a "best of" of the parameters: angle 225 is really cool! With angles after 90° the spiral twists! Try 3456
 - adding a slider for changing the color of the background: B/W or RGB?
 - add the possibility to press enter for starting a new spiral
 - remove the real time update of the angle variable (?)

@@ -1,13 +1,13 @@
 html, body {
   height: 100%;
-  padding: 0px;
-  border: 0px;
+  padding: 0;
+  border: 0;
+  margin: 0;
 }
 
 body {
-      font: 20px Helvetica, sans-serif;
+      font: 15px Helvetica, sans-serif;
       color: #333;
-      margin: 0;
       /*display: flex;*/
       /* This centers our sketch horizontally. */
       justify-content: center;
@@ -17,6 +17,6 @@ body {
       text-align: center;
       }
 h1 { font-size: 40px; }
-h2 { color: #dc8100; }
+h2 { color: #dc8100; font-size: 30px; }
 a { color: #dc8100; text-decoration: none; }
 a:hover { color: #333; text-decoration: none; }
