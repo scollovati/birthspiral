@@ -19,9 +19,9 @@
     <h1>Birth Spiral <i class="fa fa-spinner" aria-hidden="true"></i></h1>
     <h2>What will be your own spiral?</h2>
     <p>Write your birthdate in the form below to find it!</p>
-    <form>
-      <input id="userInput" type="number" pattern="[0-9]{6}" min="0" placeholder="write it as DDMMYY">
-      <input id="submitter" type="button" value="Generate Spiral" onclick="start()">
+    <form onsubmit="return false"> /* in this way the form does not force the reload of the webpage */
+      <input id="userInput" required pattern="[0-9]{6}" min="0" placeholder="write it as DDMMYY">
+      <button id="submitter" onclick="start()">Generate Spiral</button>
     </form>
     <p id="empty"></p>
     <div id="p5Canvas"></div>

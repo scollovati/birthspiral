@@ -5,17 +5,17 @@ function setup() {
   var myCanvas = createCanvas(800,400);
   myCanvas.parent("p5Canvas");
   background(0);
-  
+
   frameRate(60);
 
   myTurtle = new makeTurtle(width/2, height/2);
 }
 
 function draw() {
-  //userInput can be used for varying Turtle's parameters
-  var userInput = document.getElementById("userInput").value;
-
   if(started){
+    //userInput can be used for varying Turtle's parameters
+    var userInput = document.getElementById("userInput").value;
+
     myTurtle.forward(step);
     myTurtle.left(userInput);
     step = step + 5;
@@ -25,8 +25,17 @@ function draw() {
 }
 
 function start() {
-   started = true;
-   resetCanvas();
+  if(!document.getElementById("userInput").checkValidity())
+  {
+    //show errors
+    alert("Birth date not valid!");
+    started = false;
+  }else
+  {
+    started = true;
+    resetCanvas();
+  }
+
 }
 
 function resetCanvas() {
