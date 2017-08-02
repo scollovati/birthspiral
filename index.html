@@ -19,8 +19,10 @@
     <h1> Birth Spiral! </h1>
     <h2>What is your birthday?</h2>
     <p>Write it as DDMMYY</p>
-    <input  id="userInput" type="number" value="654321" required pattern="[0-9]{6}"></input>
-    <button id="submitter" onclick="start()">Generate spiral!</button>
+    <form>
+      <input  id="userInput" type="number" value="654321" required pattern="[0-9]{6}"></input>
+      <button id="submitter" onclick="start()">Generate spiral!</button>
+    </form>
     <p id="empty"></p>
     <div id="p5Canvas"></div>
     <div>
