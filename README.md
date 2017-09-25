@@ -2,6 +2,7 @@
 Find the spiral of your Birthday!
 
 *Made with p5.js &amp; TurtleGraphics*
+Try it [here!](https://kanoding.github.io/birthspiral/)
 
 ## To Do's
 - find appropriate LICENSE
@@ -46,3 +47,5 @@ Find the spiral of your Birthday!
 
 ## Acknowledgments
 Thanks to Professor Roger B. Dannenberg for the [Turtle object](https://courses.ideate.cmu.edu/15-104/f2016/turtle-graphics/) created in p5.js.
+
+Made with :heart: by (Alessandro Norfo)[https://github.com/sprintingkiwi] and (Stefano Collovati)[https://github.com/scollovati]

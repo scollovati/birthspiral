@@ -19,14 +19,17 @@
     <h1>Birth Spiral <i class="fa fa-spinner" aria-hidden="true"></i></h1>
     <h2>What will be your own spiral?</h2>
     <p>Write your birthdate in the form below to find it!</p>
-    <form onsubmit="return false"> <!-- in this way the form does not force the reload of the webpage */ -->
+    <form onsubmit="return false"> <!-- in this way the form does not force the reload of the webpages -->
       <input id="userInput" required pattern="[0-9]{6}" min="0" placeholder="write it as DDMMYY">
-      <button id="submitter" onclick="start()">Generate Spiral</button>
+      <button id="submitter" onclick="start()">Generate Spiral!</button>
     </form>
     <p id="empty"></p>
     <div id="p5Canvas"></div>
     <div>
-    <p>Source code on <a href="https://github.com/kanoding/birthspiral">GitHub <i class="fa fa-github" aria-hidden="true"></i></a></p>
+      <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://github.com/sprintingkiwi">Alessandro Norfo</a> and <a href="https://github.com/scollovati">Stefano Collovati</a></p>
+    </div>
+    <div>
+      <p>Source code on <a href="https://github.com/kanoding/birthspiral">GitHub <i class="fa fa-github" aria-hidden="true"></i></a></p>
     </div>
 </article>
 </body>
