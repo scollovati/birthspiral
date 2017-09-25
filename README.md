@@ -48,4 +48,4 @@ Try it [here!](https://kanoding.github.io/birthspiral/)
 ## Acknowledgments
 Thanks to Professor Roger B. Dannenberg for the [Turtle object](https://courses.ideate.cmu.edu/15-104/f2016/turtle-graphics/) created in p5.js.
 
-Made with :heart: by (Alessandro Norfo)[https://github.com/sprintingkiwi] and (Stefano Collovati)[https://github.com/scollovati]
+Made with :heart: by [Alessandro Norfo](https://github.com/sprintingkiwi) and [Stefano Collovati](https://github.com/scollovati)
