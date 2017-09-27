@@ -2,13 +2,15 @@
 Find the spiral of your Birthday!
 
 *Made with p5.js &amp; TurtleGraphics*
+Try it [here!](https://kanoding.github.io/birthspiral/)
 
 ## To Do's
 - find appropriate LICENSE
 - create a fun homepage
-- require 6 digit input number
-- add the possibility to press enter for starting a new spiral
-- remove the real time update of the angle variable (?)
+- parse the numerical input and use it as a variable for the spiral color, length, ... (angle should be at least 35)
+- create a "best of" of the parameters: angle 225 is really cool! With angles after 90° the spiral twists! Try 3456
+- adding a slider for changing the color of the background: B/W or RGB?
+- add the possibility to press the key "enter" for starting a new spiral
 - possibility to save the canvas as an image, pdf or GIF
 - possibility to send the image via email
 - make the homepage responsive
@@ -45,3 +47,5 @@ Find the spiral of your Birthday!
 
 ## Acknowledgments
 Thanks to Professor Roger B. Dannenberg for the [Turtle object](https://courses.ideate.cmu.edu/15-104/f2016/turtle-graphics/) created in p5.js.
+
+Made with :heart: by [Alessandro Norfo](https://github.com/sprintingkiwi) and [Stefano Collovati](https://github.com/scollovati)
