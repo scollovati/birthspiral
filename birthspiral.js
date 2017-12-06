@@ -11,7 +11,7 @@ function setup() {
   var myCanvas = createCanvas(800,400);
   myCanvas.parent("p5Canvas");
   background(0);
-  
+
   frameRate(60);
 
   myTurtle = new makeTurtle(width/2, height/2);
@@ -218,6 +218,7 @@ function colorScale(interval)
         }
     }
     else if (colorScalePhase == 'r_up')
+    {
         if (r + interval <= 255)
         {
             r += interval;
@@ -226,6 +227,7 @@ function colorScale(interval)
         {
             colorScalePhase = 'b_down';
         }
+    }
     else if (colorScalePhase == 'b_down')
     {
         if (b - interval >= 0)
