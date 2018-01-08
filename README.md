@@ -4,6 +4,8 @@ Find the spiral of your Birthday!
 *Made with p5.js &amp; TurtleGraphics*
 Try it [here!](https://kanoding.github.io/birthspiral/)
 
+[Scratch (simplified) version](https://scratch.mit.edu/projects/186510019/#fullscreen)
+
 ## To Do's
 - find appropriate LICENSE
 - create a fun homepage
